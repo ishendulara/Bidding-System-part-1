@@ -1,0 +1,127 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    align-items: center;
+    height: 100vh;
+}
+body {
+  background-image: url('../images/bg.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 650px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+form{
+	margin-right: 20px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+select{
+	width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4CAF50; /* Green color */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    animation: colorChange 2s infinite alternate, scaleText 1s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #4CAF50; /* Green color */
+    }
+    50% {
+        color: #FF5722; /* Orange color */
+    }
+    100% {
+        color: #4CAF50; /* Green color */
+    }
+}
+
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

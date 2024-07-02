@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+	margin-left: 550px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+table {
+	margin-top: 150px;
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+}
+th {
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+thead th {
+  background-color: #55608f;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+/* Style for the h1 tag */
+/* Style for the h1 tag */
+h1 {
+	margin-left: 60px;
+  font-size: 36px;
+  text-align: center;
+  width: 50%;
+  background-color: #3498db; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Add padding for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  animation: shadowPulse 2s infinite;
+}
+
+/* Keyframes for the shadow pulse animation */
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.img1{
+	position: absolute;
+	left: 1100px;
+	top: 250px;
+	
+}
+.img2{
+	position: absolute;
+	left: 940px;
+	top: -140px;
+	
+}
+
+
